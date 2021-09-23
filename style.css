@@ -1,0 +1,451 @@
+body, p, span{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{ 
+    font-family: 'Rubik', sans-serif;
+}
+body .btn-primary{
+    background-color: #e73a3e !important;
+    border-color: #e73a3e;
+    padding: 10px 40px;
+
+    position: relative;
+    z-index: 1;
+}
+body .btn-primary::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #111;
+
+    z-index: -1;  
+    transition: .4s;
+}
+body .btn-primary:hover::after{
+    width: 100%;
+}
+body .btn-primary:hover{
+    border-color: #111;
+}
+img{
+    max-width: 100%;
+}
+.gray-bg{
+    background-color: #f9fafb;
+}
+
+/* Header-Section */
+.header-section{
+    
+}
+.main-header .container-fluid, 
+.slider-section .container-fluid{
+    max-width: 1480px;
+}
+ul.our-primary-menu{}
+ul.our-primary-menu li{}
+ul.our-primary-menu li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #111;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+ul.our-primary-menu li a:hover{}
+
+.header-info{}
+.header-search{
+    width: 60px;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 20px;
+    border-right: 1px solid #ddd;
+}
+.header-call{
+    width: 220px;
+}
+.header-call-info span{
+    color: #606060;
+}
+.header-call-info a{
+    color: #111;
+    font-weight: 500;
+    text-decoration: none;
+}
+.header-call-icon{
+    font-size: 32px;
+    color: #e73a3e;
+}
+.header-button{}
+/* DropDown Menu */
+ul.our-primary-menu li{
+    position: relative;
+}
+ul.our-primary-menu li ul{
+    position: absolute;
+    width: 300px;
+    left: 0;
+    top: 160%;
+    background-color: #fafafa;
+    list-style: none;
+    padding: 10px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+}
+ul.our-primary-menu li:hover ul{
+   opacity: 1;
+   visibility: visible;
+   top: 130%;
+}
+ul.our-primary-menu li ul li{
+    
+}
+ul.our-primary-menu li ul li a{}
+
+/* Slider/Banner Section */
+.slider-section{
+    background: url(https://templates.envytheme.com/finix/default/assets/img/main-banner2.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.slider-content-wrap{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-social{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.slider-content{}
+.slider-content h6{
+    color: #e73a3e;
+    font-weight: 400;
+    font-size: 18px;
+}
+.slider-content h1{
+    font-size: 61px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.slider-content p{
+    font-weight: 400;
+    color: #606060;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.slider-content a{}
+.header-social{
+    color: #111;
+}
+.header-social ul{
+    list-style: none;
+    padding-left: 0;
+}
+.header-social ul span{
+    margin-left: 20px;
+    margin-right: 40px;   
+}
+.header-social ul li{}
+
+
+.header-social ul li a{
+    text-decoration: none;
+    padding: 0 10px;
+    color: #111;
+}
+
+/* Logo Section */
+.logo-section{
+    border-bottom: 1px solid #ddd;
+}
+.clint-logo{}
+.clint-logo ul{
+    list-style: none;
+    padding-left: 0;
+}
+.clint-logo ul li{}
+.clint-logo ul li a{}
+
+/* About Section */
+.about-image{
+    position: relative;
+}
+.about-img-text{
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    background: url(https://templates.envytheme.com/finix/default/assets/img/about/shape.png) no-repeat center;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-img-text h2{}
+.about-img-text p{}
+
+.about-text{}
+.finix-text{}
+.finix-text h6{
+
+    color: #e73a3e;
+    font-size: 18px;
+    font-weight: 400;
+}
+.finix-text h2{
+
+    font-weight: 400;
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+.finix-text p{
+
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #606060;
+    font-weight: 400;
+    /*! font-family: ; */
+    font-size: 18px;
+}
+.finix-text strong{
+
+    font-size: 18px;
+    color: #606060;
+    font-weight: 400;
+}
+.finix-text ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.finix-text ul li{
+
+    padding: 5px 0px;
+}
+.finix-text ul li::before{
+    content: "\f00c";
+    font-family: "Font awesome 5 Free";
+    font-weight: 600;
+    color: #e73a3e;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Why Chose Us SEction */
+.feature-item{
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+    
+}
+.feature-item:hover{
+    transform: translateY(-15px);
+}
+.feature-item::before{
+    content: "";
+    position: absolute;
+    top: -184px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 84%;
+    width: 98%;
+    background: #fdebeb;
+    border-radius: 50%;
+}
+.feature-item .ft-icon{}
+.feature-item .ft-icon i{
+    font-size: 40px;
+    background-color: #fff;
+    color: #e73a3e;
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    position: relative;
+    transition: .5s;
+}
+.feature-item h3{}
+.feature-item p{}
+.mtop4{
+    margin-top: -30px;
+}
+.feature-item:hover .ft-icon i{
+    background-color: #e73a3e;
+    color: #fff;
+}
+.finix-text{
+    position: relative;
+}
+.play-animation{
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    font-size: 60px;
+    color: #e73e3e;
+    background-color: #fff;
+    line-height: 90px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 41%;
+    bottom: 56px;
+}
+
+.play-animation::before{
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #e73a3e;
+    border-radius: 50%;
+    animation: playbtn 1.6s ease-out infinite;
+
+}
+@keyframes playbtn{
+    0%,30%{
+       transform: scale(0); 
+       opacity: 1;
+    }
+    50%{
+        transform: scale(1.5); 
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2); 
+        opacity: 0;
+    }
+}
+
+/*  Apply Now section Section */
+.apply-now-section{}
+.apply-left-text{}
+
+.stef-timeline{}
+.stef-timeline ul{
+    list-style: none;
+    position: relative;
+    margin-left: 29px;
+    /*! margin-bottom: 23px; */
+}
+.stef-timeline ul::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 1px;
+    background: #e73a3e;
+}
+.stef-timeline ul li{
+    position: relative;
+    margin-bottom: 28px;
+}
+.stef-timeline ul li::before{
+    content: attr(data-counter);
+    position: absolute;
+    top: 0;
+    left: -52px;
+    height: 40px;
+    width: 40px;
+    background: #f9fafb;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #e73a3e;
+    /*! margin-bottom: 14px; */
+}
+.stef-timeline ul li strong{
+    display: block;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.stef-timeline ul li p{
+    line-height: 1.8;
+    color: #606060;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.calculate-rate{
+    background-color: #fdebeb;
+    padding: 33px 50px;  
+}
+.calculate-rate .finix-text{}
+.calculate-rate .finix-text h6{
+    color: #606060;
+}
+.calculate-rate .finix-text h2{}
+.calculate-form{
+   
+}
+.form-group{
+
+}
+
+.calculate-form {}
+.calculate-form .form-group{}
+.calculate-form .form-group input{
+    border: none;border-radius: nome;
+    display: inline-block;border-radius: unset;
+    padding: 14px 20px;
+    margin-bottom: 25px;
+}
+.calculate-form .form-group select{
+    border: none;border-radius: nome;
+    display: inline-block;border-radius: unset;
+    padding: 14px 20px;
+    margin-bottom: 25px;
+}
+.calculate-form .form-group label{}
+
+/* call-to-action Section */
+.call-to-action-bg{
+    background-color: #e73c3e;
+    border-radius: 5px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fff;
+}
+.call-to-action-bg h2{
+   
+}
+.call-to-action-phone{}
+.call-to-action-phone span{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #e73c3e;
+    font-size: 30px;
+}
+.call-to-action-phone a{
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
